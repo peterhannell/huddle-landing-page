@@ -107,14 +107,13 @@ header {
   background-image: url(/images/bg-hero-mobile.svg);
   background-repeat: no-repeat;
   object-fit: contain;
-  padding-block: 1.4rem 2.15rem;
+  padding: 1.4rem 0.9rem 0.9rem 2.15rem;
 }
 
 header > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 0.9rem;
   margin-bottom: 5.45rem;
 }
 
@@ -278,4 +277,48 @@ nav a:hover {
 
 footer > p {
   font-size: 0.8rem;
+}
+
+/*  =======================
+    @media tablet landscape
+    ======================= */
+
+@media screen and (min-width: 900px) {
+  body {
+    text-align: left;
+  }
+
+  header {
+    background-image: url(/images/bg-hero-desktop.svg);
+    padding: 1.4rem 4.6rem 2.15rem 4.6rem;
+  }
+
+  article,
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    /* width: min(100% - 5rem, 85rem); */
+    width: max(100%);
+  }
+
+  article {
+    gap: 0;
+  }
+
+  main {
+    padding-inline: 5.3rem;
+  }
+
+  section {
+    gap: 6rem;
+  }
+
+  section:first-of-type > div:first-child {
+    order: 1;
+  }
+
+  section:last-of-type > div:first-child {
+    order: 1;
+  }
 }
