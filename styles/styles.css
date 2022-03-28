@@ -125,11 +125,11 @@ a {
   transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.left {
+.top-bar__logo-container {
   width: 10rem;
 }
 
-.right {
+.top-bar__button-container {
   font-weight: 700;
 }
 
@@ -342,7 +342,7 @@ address {
     padding: 1.3em 5.4em;
   }
 
-  .left {
+  .top-bar__logo-container {
     width: 20rem;
   }
 
